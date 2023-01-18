@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,257 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Just_Dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5Ul-bE-dgj">
+                                <rect key="frame" x="-3" y="0.0" width="1195" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Jv4-yG-kea" userLabel="Logo">
+                                <rect key="frame" x="499" y="64" width="196" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="WSN-ZM-X0N"/>
+                                    <constraint firstAttribute="height" constant="128" id="XRr-J6-iZI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-R6-B8d" userLabel="Dice Image View1">
+                                <rect key="frame" x="297" y="317" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9K9-GW-UWC"/>
+                                    <constraint firstAttribute="height" constant="120" id="qaI-B4-oxA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-Gx-pbq" userLabel="Dice Image View2">
+                                <rect key="frame" x="537" y="317" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Frc-AJ-ouU"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZUl-m1-wLt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-Me-M08" userLabel="Dice Image View3">
+                                <rect key="frame" x="777" y="317" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="jjQ-hj-rtf"/>
+                                    <constraint firstAttribute="width" constant="120" id="q8l-cz-6mZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt1-jY-cPs">
+                                <rect key="frame" x="297" y="587" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="CyM-yd-mdQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Dpk-yT-xSu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="승부사">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+(</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="1 or 6">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=")">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.99215686274509807" green="0.65490196078431373" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="luckyRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbE-pf-ivR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkb-mU-0k7">
+                                <rect key="frame" x="537" y="587" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4Gc-Zc-Hhk"/>
+                                    <constraint firstAttribute="height" constant="50" id="5m4-cl-1qf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="그냥 굴리기">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.6705882352941176" green="0.76078431372549016" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="simpleRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfF-On-anS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfr-aQ-plu">
+                                <rect key="frame" x="757" y="587" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="1k3-Y7-2rL"/>
+                                    <constraint firstAttribute="height" constant="50" id="i5Y-iH-A1h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">쫄보
+(</string>
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="2">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="~">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="4">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=")">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="NanumGothic"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.99607843137254903" green="0.78431372549019607" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chickenRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9r-al-BpG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wke-5p-KND" userLabel="Result">
+                                <rect key="frame" x="562" y="477" width="70" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ymD-Gx-pbq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="4PU-Ym-mCy"/>
+                            <constraint firstItem="ymD-Gx-pbq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6j8-Bc-WzW"/>
+                            <constraint firstItem="Jv4-yG-kea" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7J3-ps-obc"/>
+                            <constraint firstItem="Gr4-Me-M08" firstAttribute="leading" secondItem="ymD-Gx-pbq" secondAttribute="trailing" constant="120" id="Atq-WD-B1E"/>
+                            <constraint firstItem="p9g-R6-B8d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="KEt-KW-oHK"/>
+                            <constraint firstItem="Mt1-jY-cPs" firstAttribute="top" secondItem="p9g-R6-B8d" secondAttribute="bottom" constant="150" id="Kpz-Hd-TIV"/>
+                            <constraint firstItem="Gr4-Me-M08" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="MAl-So-bp0"/>
+                            <constraint firstItem="ymD-Gx-pbq" firstAttribute="leading" secondItem="p9g-R6-B8d" secondAttribute="trailing" constant="120" id="dDp-XH-WWF"/>
+                            <constraint firstItem="Mkb-mU-0k7" firstAttribute="top" secondItem="ymD-Gx-pbq" secondAttribute="bottom" constant="150" id="ffg-EO-7sp"/>
+                            <constraint firstItem="Rfr-aQ-plu" firstAttribute="leading" secondItem="Mkb-mU-0k7" secondAttribute="trailing" constant="100" id="hnG-78-dHu"/>
+                            <constraint firstItem="Wke-5p-KND" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYB-qi-LZ7"/>
+                            <constraint firstItem="Wke-5p-KND" firstAttribute="top" secondItem="ymD-Gx-pbq" secondAttribute="bottom" constant="40" id="tHF-e2-RH0"/>
+                            <constraint firstItem="Rfr-aQ-plu" firstAttribute="top" secondItem="Gr4-Me-M08" secondAttribute="bottom" constant="150" id="tcx-sq-zMF"/>
+                            <constraint firstItem="Mkb-mU-0k7" firstAttribute="leading" secondItem="Mt1-jY-cPs" secondAttribute="trailing" constant="100" id="xW0-3d-9QQ"/>
+                            <constraint firstItem="Mkb-mU-0k7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYr-Mq-Pz7"/>
+                            <constraint firstItem="Jv4-yG-kea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zwf-cn-G0y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnChicken" destination="Rfr-aQ-plu" id="w5r-O3-vfL"/>
+                        <outlet property="btnLucky" destination="Mt1-jY-cPs" id="GFi-Nc-UJE"/>
+                        <outlet property="btnSimple" destination="Mkb-mU-0k7" id="FWe-mC-lu0"/>
+                        <outlet property="diceImageView1" destination="p9g-R6-B8d" id="DwG-eM-juv"/>
+                        <outlet property="diceImageView2" destination="ymD-Gx-pbq" id="vI9-YI-pkB"/>
+                        <outlet property="diceImageView3" destination="Gr4-Me-M08" id="i9o-ir-Mrh"/>
+                        <outlet property="lbResult" destination="Wke-5p-KND" id="YAI-TE-I6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.68341708542712" y="2.1582733812949644"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DiceOne" width="100" height="100"/>
+        <image name="DiceeLogo" width="196" height="128"/>
+        <image name="GreenBackground" width="444.5" height="414"/>
+    </resources>
 </document>
