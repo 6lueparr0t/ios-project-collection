@@ -36,9 +36,9 @@ class ViewController: UIViewController {
     var dice3 = 0
     
     @IBAction func luckyRoll(_ sender: Any) {
-        dice1 = Int.random(in: 0...1) == 0 ? 0:5
-        dice2 = Int.random(in: 0...1) == 0 ? 0:5
-        dice3 = Int.random(in: 0...1) == 0 ? 0:5
+        dice1 = Int.random(in: 0...5) < 4 ? 0:5
+        dice2 = Int.random(in: 0...5) < 4 ? 0:5
+        dice3 = Int.random(in: 0...5) < 4 ? 0:5
         
         diceImageView1.image = diceArray[dice1]
         diceImageView2.image = diceArray[dice2]
@@ -60,9 +60,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func chickenRoll(_ sender: Any) {
-        dice1 = Int.random(in: 1...3)
-        dice2 = Int.random(in: 1...3)
-        dice3 = Int.random(in: 1...3)
+        dice1 = Int.random(in: 2...3)
+        dice2 = Int.random(in: 2...3)
+        dice3 = Int.random(in: 2...3)
         
         diceImageView1.image = diceArray[dice1]
         diceImageView2.image = diceArray[dice2]
